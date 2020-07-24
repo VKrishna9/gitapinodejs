@@ -20,15 +20,17 @@ Run:
 API:
 
 >User Login:
+Method: post
 >/gitapi/validateuser
 
->API expect JSON packet with parameters:      
+API expect JSON packet with parameters:      
 >username
 >password
 
 Response -- status 200 with json packet username, userid, jwttoken
 
 Search Git repository:
+Method: post
 >/gitapi/searchrepo
 
 API Expect:
@@ -38,9 +40,10 @@ API Expect:
 Response: Status 200  with JSON packet
 
 Admin Reports:
-/gitapi/reports
+>/gitapi/reports
+>Method: post
 API Expect:
-headers- authorization
+>headers- authorization
 
 Response: Status 200  with JSON packet
 
