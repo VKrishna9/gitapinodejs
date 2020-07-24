@@ -5,34 +5,34 @@ This is a sample GIT repository search RESTAPI
 How to run?
 
 Configure:
-API context: src/config/congif.json--
-basecontext
-path
+>API context: src/config/congif.json
+>basecontext
+>path
 
-MongoDB--
-url
+MongoDB:
+>url
 
-$ npm install
+>$ npm install
 
-$ npm start
+>$ npm start
 
 API:
 
-User Login:
-/gitapi/validateuser
+>User Login:
+>/gitapi/validateuser
 
-API expect JSON packet with parameters:      
-username
-password
+>API expect JSON packet with parameters:      
+>username
+>password
 
 Response -- status 200 with json packet username, userid, jwttoken
 
 Search Git repository:
-/gitapi/searchrepo
+>/gitapi/searchrepo
 
 API Expect:
-headers- authorization
-body : sch, sch2, linkm userId
+>headers- authorization
+>body : sch, sch2, linkm userId
 
 Response: Status 200  with JSON packet
 
@@ -46,6 +46,7 @@ Response: Status 200  with JSON packet
 
 Test:
 > npm install mocha --g
+Run:
 > mocha
 
 
