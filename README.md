@@ -26,6 +26,8 @@ Method: post
 API expect JSON packet with parameters:      
 >username
 >password
+(For admin use username : admin)
+(For users use username : agent1 , agent2)
 
 Response -- status 200 with json packet username, userid, jwttoken
 
