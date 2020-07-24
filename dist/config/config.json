@@ -1,0 +1,15 @@
+{
+  
+   "log4j":
+      {
+      "path": "/logs/gitservice/service.log",
+      "interval": "HH",
+      "log4jpath":"./dist/config/log4js.json"
+      }
+  ,
+  "service":
+      {
+      "port": "3000",
+      "basecontext": "/v1/api"
+      } 
+}

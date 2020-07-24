@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.cors = exports.httpLogger = exports.logger = exports.logConfigPath = exports.path = void 0;
+var log4js_1 = require("log4js");
+exports.path = require("path");
+var index = (__dirname.length) - 10;
+exports.logConfigPath = __dirname.substring(0, index) + exports.path.sep + "config" + exports.path.sep + "log4js.json";
+console.log("logConfigPath :" + exports.logConfigPath);
+log4js_1.configure(exports.logConfigPath);
+exports.logger = log4js_1.getLogger();
+exports.httpLogger = log4js_1.getLogger("http");
+exports.cors = require("cors");
