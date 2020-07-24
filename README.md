@@ -12,6 +12,7 @@ Configure:
 MongoDB:
 >url
 
+Run:
 >$ npm install
 
 >$ npm start
