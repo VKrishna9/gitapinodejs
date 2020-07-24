@@ -33,7 +33,7 @@ Search Git repository:
 
 API Expect:
 >headers- authorization
->body : sch, sch2, linkm userId
+>body : sch, sch2, link, userId
 
 Response: Status 200  with JSON packet
 
